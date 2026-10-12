@@ -5,7 +5,7 @@ External language profiles for Latvian (`lv`), Hungarian (`hu`), Croatian (`hr`)
 ## Install
 
 ```sh
-pip install .
+pip install git+https://github.com/brunnojob/yasbd-eu-packs.git
 ```
 
 ## Use
