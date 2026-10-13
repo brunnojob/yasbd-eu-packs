@@ -12,27 +12,27 @@ class FiRules(Rules):
 
         # Social
         "hra", "rva", "nti",
+
+        # Roles
+        "joht", "nimim", "pj", "puh.joht", "siht", "toim", "yo",
     }
 
     REFERENCE_ABBRVS = Rules.REFERENCE_ABBRVS | {
         # Layout & Citations
-        "s", "ss", "kpl", "kuv", "taul", "liite", "ks",
-        "vrt", "huom", "nro", "n:o", "mom", "kohta",
+        "s", "ss", "kpl", "kuv", "taul", "liite", "ks", "vrt", "huom",
+        "nro", "n:o", "mom", "kohta", "aik", "alk", "alv", "ed", "k",
+        "ko", "lk", "lkm", "lyh", "läh", "nyk", "oik", "par", "per",
+        "puh", "rak", "srk", "synt", "t", "tark", "til", "vas", "vast",
+        "vm", "po", "so", "yl",
 
         # Legal Reference Identifiers
         "pykälä", "ao", "em", "ml",
     }
 
     INLINE_ONLY_ABBRVS = Rules.INLINE_ONLY_ABBRVS | {
-        # Discourse & Syntactic Coordinators
         "esim", "mm", "jne", "ym", "yms", "tms", "ts", "ns",
-        "n", "mrd", "milj",
-
-        # Temporal
-        "klo", "eaa", "jaa",
-
-        # Address Identifiers
-        "os", "pl", "as",
+        "n", "mrd", "milj", "klo", "eaa", "jaa", "os", "pl",
+        "as", "miel", "myöh",
     }
 
     SECTION_MARKERS = Rules.SECTION_MARKERS | {
@@ -45,7 +45,11 @@ class FiRules(Rules):
         "heinäk", "elok", "syysk", "lokak", "marrask", "jouluk",
 
         # Days
-        "ma", "ti", "ke", "to", "pe", "la", "su",
+        "ma", "ti", "ke", "to", "pe", "la", "su", "ark", "pvm",
+    }
+
+    CORP_ENTITY_ABBRVS = Rules.CORP_ENTITY_ABBRVS | {
+        "RY", "YHT",
     }
 
 # fmt: on
