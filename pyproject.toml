@@ -6,10 +6,53 @@ build-backend = "setuptools.build_meta"
 name = "yasbd-eu-packs"
 version = "0.1.0"
 description = "External Latvian, Hungarian, Croatian, Finnish and Slovenian profiles for yasbd"
+authors = [
+  { name = "brunnodev", email = "contato@brunnodev.store" },
+  { name = "speedyk_005", email = "speedy40115719@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Text Processing :: General",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = [
+  "multilingual",
+  "natural language processing",
+  "nlp",
+  "rule based",
+  "sentence boundary detection",
+  "sentence segmentation",
+  "sentence splitter",
+  "text processing",
+  "language pack",
+  "language profiles",
+  "latvian",
+  "hungarian",
+  "croatian",
+  "finnish",
+  "slovenian",
+]
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MPL-2.0"
 dependencies = ["yasbd-lib>=1.0.0,<2"]
+
+[project.urls]
+Homepage = "https://github.com/brunnojob/yasbd-eu-packs"
+Repository = "https://github.com/brunnojob/yasbd-eu-packs"
+Issues = "https://github.com/brunnojob/yasbd-eu-packs/issues"
+Changelog = "https://github.com/brunnojob/yasbd-eu-packs/releases"
 
 [project.optional-dependencies]
 test = ["pytest>=8", "ruff>=0.14", "build"]
